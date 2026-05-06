@@ -21,7 +21,7 @@ A complete graphical tool to **extract, modify, and repack** the game data of **
 - **Extract `data.csz`** – Full (with (1)/(2) suffixes), English only, or Japanese only.
 - **Compress** – Turn a `data` folder back into a `data.csz` archive.
 - **Restore original `data.csz`** – From a ZIP‑file backup.
-- **Apply patch/mod** – Replace the `data.csz` inside the PSP executable (`EBOOT.PBP`) with a modified one.
+- **Apply patch/mod** – Replace the `data.csz` inside the PSP game folder with a modified one.
 - **Extract `EBOOT.PBP`** – Get all internal sections (PARAM.SFO, ICON0.PNG, DATA.PSP, …) as individual files.
 - **Compress `EBOOT.PBP`** – Rebuild a PSP executable from an extracted folder.
 - **Edit `PARAM.SFO`** – Quickly change the game title that appears on the PSP XMB.

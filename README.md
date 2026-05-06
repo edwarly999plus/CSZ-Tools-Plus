@@ -14,7 +14,8 @@ A complete graphical tool to **extract, modify, and repack** the game data of **
 ## CSZ Tools Plus GUI
 <img width="709" height="641" alt="image" src="https://github.com/user-attachments/assets/b19303fe-47c1-401f-84ab-e6309ee3efc9" />
 
-
+<div align="left">
+  
 ## ✨ Features
 
 - **Extract `data.csz`** – Full (with (1)/(2) suffixes), English only, or Japanese only.
@@ -48,11 +49,7 @@ A complete graphical tool to **extract, modify, and repack** the game data of **
 
 ```bash
 git clone https://github.com/edwarly999plus/CSZ-Tools-Plus.git
-```
-```bash
 cd CSZ-Tools-Plus
-```
-```bash
 python main.py
 ```
 

@@ -41,7 +41,7 @@ A complete graphical tool to **extract, modify, and repack** the game data of **
 ### Option 1: Use the pre‑compiled executable (recommended)
 
 1. Go to the [Releases](https://github.com/edwarly999plus/CSZ-Tools-Plus/releases) page.
-2. Download `CSZ Tools+ Windows.zip`.
+2. Download `CSZ_Tools+_Windows.zip`.
 3. Extract it in an empty folder.
 4. Double‑click to run – no installation required.
 
@@ -55,8 +55,8 @@ python main.py
 
 ## 🧰 How to Use
 
-### 📁 Working with data.csz
-Utiliza estas funciones para manipular el contenedor principal de archivos del juego.
+### 📁 Working with `data.csz`
+Use these functions to manipulate the game's main file container.
 
 | Button | Action |
 | :--- | :--- |
@@ -66,15 +66,27 @@ Utiliza estas funciones para manipular el contenedor principal de archivos del j
 | **Compress** | Takes the `data` folder (created by any extractor) and builds a new `data.csz`. |
 | **Restore original data.csz** | Replaces the current `data.csz` with the one from `data_original.zip`. |
 
+### 📁 Working with `EBOOT.PBP`
+
+| Button | What it does |
+|--------|---------------|
+| **Extract EBOOT.PBP** | Dumps all sections into `EBOOT_EXTRACTED`. |
+| **Compress EBOOT.PBP** | Rebuilds `EBOOT.PBP` from `EBOOT_EXTRACTED`. |
+| **Edit PARAM.SFO** | Changes the game title (saved inside `EBOOT_EXTRACTED/PARAM.SFO`). |
+| **Restore Original EBOOT.PBP** | Restores from `original_eboot.zip` (CRC‑verified). |
+| **Apply Patch/Mod** | Replaces the `data.csz` inside a selected folder with a modified one. |
+
+> 💡 **Auto‑selection**: If the expected file/folder exists in the same directory (e.g., `EBOOT.PBP`, `EBOOT_EXTRACTED`, `original_eboot.zip`), the tool uses it without extra dialogs.
+
 ---
 
 ### 🛠️ Typical Workflow for English‑only Mods
-Sigue estos pasos para crear una traducción o mod en inglés de manera efectiva:
+Follow these steps to effectively create an English translation or mod:
 
-1. **Extract English:** Extrae los archivos base desde un `data.csz` limpio.
-2. **Modify:** Edita los archivos dentro de la carpeta `/data` generada.
-3. **Compress:** Genera el nuevo `data.csz` (Tamaño aproximado: ~1.36 MB).
-4. **Apply Patch:** Usa la función *Apply Patch/Mod* apuntando a tu `EBOOT.PBP` y selecciona tu nuevo `data.csz`.
+1. **Extract English:** Extracts the base files from a clean `data.csz` file.
+2. **Modify:** Edits the files within the generated `/data` folder.
+3. **Compress:** Generates the new `data.csz` file (Approximate size: ~1.36 MB).
+4. **Apply Patch:** Use the *Apply Patch/Mod* function, pointing to your `EBOOT.PBP` file and selecting your new `data.csz` file.
 
 ---
 
